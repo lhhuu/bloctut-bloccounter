@@ -8,7 +8,6 @@ class CounterBloc extends Bloc<CounterEvent, int> {
   @override
   Stream<int> mapEventToState(CounterEvent event) async* {
     switch(event){
-
       case CounterEvent.increment:
         yield currentState +1;
         break;
