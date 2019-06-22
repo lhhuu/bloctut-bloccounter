@@ -1,5 +1,6 @@
 import 'package:appcounter2/CounterBloc.dart';
 import 'package:appcounter2/CounterPage.dart';
+import 'package:appcounter2/CounterPage2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
       title: "Counter demo app",
       home: BlocProvider<CounterBloc>(
         builder: (context) => CounterBloc(),
-        child: CounterPage(),
+        child: CounterPage2(),
       ),
     );
   }
